@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Jacket</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#nav{
+    display: flex;
+    justify-content: end;
+    height: 5vh;
+    align-items: center;
+    gap: 2vw;
+    padding: 0px 1.5vw;
+}
+
+#nav h4{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#nav i{
+
+    background-color: #000;
+    padding: .5rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    align-self: center;
+}
+
+#heading {
+    padding: 2rem 4rem;
+}
+
+#heading h1{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+}
+
+#heading #center-in{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+#center-in p{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 600 ;
+}
+
+#right{
+    width: 30%;
+}
+
+.ele{
+    border-top: .2rem solid black;
+    padding: 1rem 0;
+}
+
+.ele a{
+    font-size: 1rem;
+    font-weight: 600;
+    /* padding: .5rem;  */
+    text-decoration: none;
+    color: black;
+}
+
+.ele i{
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.ele:hover i{
+    opacity: 1;
+}
+
+.ele:hover a{
+    text-decoration: underline;
+}
+
+.ele:hover{
+    background-color: rgb(215, 215, 215)
+}
+
+#bottom{
+    width: 100%;
+    background: url(./img.jpg);
+    background-position: 0 20%;
+    background-size: cover;
+    height: 35%;
+}
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <nav id="nav">
+            <h4>Home</h4>
+            <h4>News</h4>
+            <h4>Cart</h4>
+            <i class="ri-shopping-bag-line"></i>
+        </nav>
+        <div id="heading">
+            <h1>Lightly padded,<br>quilted jacket in<br>recycled polyester.</h1>
+            <div id="center-in">
+                <p>Exclusive brands aspire for the label haute couture,<br>but the term is technically limited to<br>members of the Chambre Syndicale de la Haute</p>
+                <div id="right">
+                    <div class="ele">
+                        <a href="#">Add to cart</a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                    <div class="ele">
+                        <a href="#">Product details</a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                    <div class="ele">
+                        <a href="#">Shipping</a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            
+        </div>
+    </div>
+</body>
+</html>
